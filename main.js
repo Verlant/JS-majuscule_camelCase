@@ -10,6 +10,10 @@ function camel_case(string) {
   for (i = 1; i < split_string.length; i++) {
     final_string = final_string.concat(first_letter(split_string[i]));
   }
+  // split_string.forEach((element) => {
+  //   final_string = final_string.concat(element[0].toUpperCase().slice(1));
+  // });
+  // final_string = final_string[0].toLowerCase() + final_string.slice(1);
   return final_string;
 }
 console.log(first_letter(asked_string));
